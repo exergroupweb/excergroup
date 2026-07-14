@@ -9,3 +9,7 @@ __pycache__/
 # OS junk
 .DS_Store
 Thumbs.db
+
+# Scratch folder where raw source images get dropped before being
+# cropped/optimized into images/ — not site assets themselves
+images/IMAGENES EXER/

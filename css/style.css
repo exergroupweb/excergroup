@@ -173,13 +173,26 @@ a { color: inherit; text-decoration: none; }
 
 /* ===== Hero (Home) ===== */
 .hero {
+  position: relative;
   display: flex;
   align-items: center;
   min-height: 70vh;
   padding: 80px 0;
+  background-color: var(--white);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.94) 45%, rgba(255, 255, 255, 0.75) 100%);
 }
 
 .hero__grid {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   gap: 48px;
@@ -227,13 +240,23 @@ a { color: inherit; text-decoration: none; }
 
 /* ===== Quote section (Home) ===== */
 .quote-section {
-  background: var(--navy);
+  position: relative;
+  background-color: var(--navy);
+  background-size: cover;
+  background-position: center;
   padding: 96px 0;
   overflow: hidden;
 }
 
+.quote-section__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(26, 67, 140, 0.92) 0%, rgba(14, 19, 24, 0.85) 100%);
+}
+
 .quote-section__grid {
   position: relative;
+  z-index: 1;
 }
 
 .quote-box {
