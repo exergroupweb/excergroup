@@ -5,7 +5,7 @@ BASE = Path(__file__).parent
 OUT = BASE / "qa_screenshots"
 OUT.mkdir(exist_ok=True)
 
-PAGES = ["index.html", "nosotros.html", "contacto.html"]
+PAGES = ["index.html", "servicios.html", "nosotros.html", "contacto.html"]
 VIEWPORTS = {
     "desktop": {"width": 1440, "height": 900},
     "tablet": {"width": 834, "height": 1112},
