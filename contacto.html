@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contactanos — EXER Ingeniería Energética</title>
+<meta name="description" content="Contactá a EXER para una consulta sobre eficiencia energética, optimización tarifaria o gestión de procesos para tu PyME industrial.">
+<link rel="icon" href="images/logo-blanco.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html"><img class="nav__logo" src="images/logo-blanco.png" alt="EXER — Ingeniería Energética"></a>
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="index.html#servicios">Nuestros Servicios</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html" aria-current="page">Contactanos</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="contact-hero">
+    <div class="container">
+      <h1 class="reveal">Hablemos de tu planta</h1>
+      <p class="reveal">Contanos qué necesitás y te respondemos a la brevedad. Sin compromiso, sin riesgo.</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <form class="contact-form reveal" id="contact-form" novalidate>
+
+        <!-- Honeypot anti-spam: campo oculto, invisible para personas, los bots lo completan -->
+        <div class="form-honeypot" aria-hidden="true">
+          <label for="company">No completar este campo</label>
+          <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="form-row">
+          <label for="nombre">Nombre completo <span class="required">*</span></label>
+          <input type="text" id="nombre" name="nombre" required autocomplete="name">
+          <div class="form-error" data-error-for="nombre"></div>
+        </div>
+
+        <div class="form-row">
+          <label for="telefono">Teléfono <span class="required">*</span></label>
+          <input type="tel" id="telefono" name="telefono" required autocomplete="tel">
+          <div class="form-error" data-error-for="telefono"></div>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+          <div class="form-error" data-error-for="email"></div>
+        </div>
+
+        <div class="form-row">
+          <label for="servicio">Tipo de servicio a consultar <span class="required">*</span></label>
+          <select id="servicio" name="servicio" required>
+            <option value="" disabled selected>Seleccioná una opción</option>
+            <option value="Revisión Energética">Revisión Energética</option>
+            <option value="Optimización de Contratación Tarifaria">Optimización de Contratación Tarifaria</option>
+            <option value="Optimización e Ingeniería de Procesos">Optimización e Ingeniería de Procesos</option>
+            <option value="Implementación y Supervisión de Mejoras">Implementación y Supervisión de Mejoras</option>
+            <option value="Gestión 4.0 - ISO 50.001">Gestión 4.0 - ISO 50.001</option>
+            <option value="Asesoramiento y Seguimiento Personalizado">Asesoramiento y Seguimiento Personalizado</option>
+            <option value="Consulta general">Consulta general</option>
+          </select>
+          <div class="form-error" data-error-for="servicio"></div>
+        </div>
+
+        <div class="form-row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Contanos más sobre tu consulta (opcional)"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--gradient form-submit">
+          <span class="btn-label">Enviar consulta</span>
+        </button>
+
+        <div class="form-status form-status--success" role="status" aria-live="polite" data-status="success">
+          ✓ ¡Gracias! Tu consulta fue enviada. Te vamos a responder a la brevedad.
+        </div>
+        <div class="form-status form-status--error" role="alert" aria-live="assertive" data-status="error">
+          No pudimos enviar tu consulta. Probá de nuevo o escribinos a
+          <a href="mailto:ingenieria@exergroup.com">ingenieria@exergroup.com</a>.
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col reveal">
+        <h3>Datos de contacto</h3>
+        <p>Vicente López, Buenos Aires. Argentina.</p>
+        <p><a href="tel:+541137036719">+54 11-3703-6719</a></p>
+        <p><a href="mailto:ingenieria@exergroup.com">ingenieria@exergroup.com</a></p>
+      </div>
+
+      <div class="footer__col reveal">
+        <h3>Nuestras redes</h3>
+        <a href="https://linkedin.com/company/exer-group" target="_blank" rel="noopener">linkedin.com/company/exer-group</a>
+        <a href="https://exer.group" target="_blank" rel="noopener">exer.group</a>
+      </div>
+
+      <div class="footer__col reveal">
+        <h3>Servicios</h3>
+        <ol class="footer__services">
+          <li>Revisión Energética Bonificada</li>
+          <li>Optimización de Contratación Tarifaria</li>
+          <li>Optimización e Ingeniería de Procesos</li>
+          <li>Implementación y Supervisión de Mejoras</li>
+          <li>Gestión 4.0 - ISO 50001</li>
+          <li>Asesoramiento y Seguimiento Personalizado</li>
+        </ol>
+      </div>
+
+      <div class="footer__col reveal">
+        <h3>Nosotros</h3>
+        <p>EXER es una consultora de ingeniería especializada en eficiencia energética para PyMEs industriales. Transformamos el consumo de energía en una ventaja competitiva, reduciendo costos operativos y mejorando la rentabilidad de tu planta con un modelo de riesgo cero.</p>
+        <a class="btn btn--small" href="nosotros.html" style="margin-top:8px;">VER MÁS</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <a href="#">Términos y ayuda</a>
+      <a href="#">Política de privacidad</a>
+      <span>&copy; <span id="year"></span> EXER Ingeniería Energética</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact-form.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

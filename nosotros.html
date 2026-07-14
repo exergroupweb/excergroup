@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosotros — EXER Ingeniería Energética</title>
+<meta name="description" content="Conocé a EXER: ingeniería especializada en eficiencia energética para ayudar a las PyMEs industriales a reducir costos y mejorar su rentabilidad.">
+<link rel="icon" href="images/logo-blanco.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html"><img class="nav__logo" src="images/logo-blanco.png" alt="EXER — Ingeniería Energética"></a>
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="index.html#servicios">Nuestros Servicios</a></li>
+      <li><a href="nosotros.html" aria-current="page">Nosotros</a></li>
+      <li><a href="contacto.html">Contactanos</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="about-hero" style="background-image:url('images/nosotros-banner.png');">
+    <div class="about-hero__overlay"></div>
+  </section>
+
+  <section class="about-intro">
+    <div class="container about-intro__grid">
+      <div class="about-quote reveal">
+        <img class="about-quote__icon" src="images/icono-lampara.png" alt="">
+        <p>EXER es una empresa de ingeniería especializada en Eficiencia Energética, dedicada a ayudar a las PyMEs industriales a reducir sus costos operativos y mejorar su rentabilidad.</p>
+        <p>Entendemos que la energía es uno de los mayores costos fijos, y muchas veces, una "caja negra" difícil de gestionar. Por eso, nacimos con un propósito claro:</p>
+      </div>
+      <div class="about-photo reveal">
+        <img src="images/equipo-handshake.png" alt="Equipo de EXER junto a un cliente en una planta industrial">
+      </div>
+    </div>
+  </section>
+
+  <section class="differentiators">
+    <div class="container">
+      <span class="differentiators__badge reveal">¿QUÉ NOS DIFERENCIA?</span>
+      <div class="differentiators__list">
+        <p class="reveal"><strong>Conocimiento del rubro:</strong> No somos consultores externos que solo miran números; somos parte del sector industrial. Entendemos el día a día de una planta y sabemos dónde buscar las ineficiencias.</p>
+        <p class="reveal"><strong>Modelo de riesgo cero:</strong> Creemos tanto en nuestro trabajo que ofrecemos una revisión energética inicial 100% bonificada. Además, en nuestros servicios de optimización tarifaria, solo cobramos si vos ahorrás.</p>
+        <p class="reveal"><strong>Soluciones integrales:</strong> Desde la corrección de facturación hasta el monitoreo 4.0 en tiempo real. Te acompañamos en cada etapa del proceso.</p>
+        <p class="reveal">En EXER, nuestra misión es simple: que tu empresa sea más competitiva, eficiente y sostenible. Sabemos lo que hay que hacer y tenemos las herramientas para lograrlo.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col reveal">
+        <h3>Datos de contacto</h3>
+        <p>Vicente López, Buenos Aires. Argentina.</p>
+        <p><a href="tel:+541137036719">+54 11-3703-6719</a></p>
+        <p><a href="mailto:ingenieria@exergroup.com">ingenieria@exergroup.com</a></p>
+        <a class="btn btn--small" href="contacto.html" style="margin-top:8px;">VER MÁS</a>
+      </div>
+
+      <div class="footer__col reveal">
+        <h3>Nuestras redes</h3>
+        <a href="https://linkedin.com/company/exer-group" target="_blank" rel="noopener">linkedin.com/company/exer-group</a>
+        <a href="https://exer.group" target="_blank" rel="noopener">exer.group</a>
+      </div>
+
+      <div class="footer__col reveal">
+        <h3>Servicios</h3>
+        <ol class="footer__services">
+          <li>Revisión Energética Bonificada</li>
+          <li>Optimización de Contratación Tarifaria</li>
+          <li>Optimización e Ingeniería de Procesos</li>
+          <li>Implementación y Supervisión de Mejoras</li>
+          <li>Gestión 4.0 - ISO 50001</li>
+          <li>Asesoramiento y Seguimiento Personalizado</li>
+        </ol>
+        <a class="btn btn--small" href="https://canva.link/gfbnpi7cw1v7j01" target="_blank" rel="noopener">REVISIÓN ENERGÉTICA BONIFICADA</a>
+      </div>
+
+      <div class="footer__col reveal">
+        <h3>Nosotros</h3>
+        <p>EXER es una consultora de ingeniería especializada en eficiencia energética para PyMEs industriales. Transformamos el consumo de energía en una ventaja competitiva, reduciendo costos operativos y mejorando la rentabilidad de tu planta con un modelo de riesgo cero.</p>
+        <a class="btn btn--small" href="nosotros.html" style="margin-top:8px;">VER MÁS</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <a href="#">Términos y ayuda</a>
+      <a href="#">Política de privacidad</a>
+      <span>&copy; <span id="year"></span> EXER Ingeniería Energética</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
