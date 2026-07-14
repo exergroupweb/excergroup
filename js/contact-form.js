@@ -2,10 +2,14 @@
 //
 // IMPORTANTE: reemplazar FORMSPREE_ENDPOINT por el endpoint real antes de publicar.
 // Pasos para obtenerlo (gratis, ~2 minutos):
-//   1. Crear cuenta en https://formspree.io con el email candela.pilar.trigo@gmail.com
+//   1. Crear cuenta en https://formspree.io (podés usar ingenieria@exergroup.com
+//      o cualquier otro email para el login — no tiene que coincidir con el
+//      destino de las consultas)
 //   2. Crear un nuevo formulario ("New Form"), nombrarlo p.ej. "Exer Group — Contacto"
-//   3. Formspree te da una URL del tipo https://formspree.io/f/xxxxxxxx — copiarla acá abajo
-//   4. Formspree envía un email de verificación a candela.pilar.trigo@gmail.com:
+//   3. En la configuración del formulario, en "Email" / "Send form submissions to",
+//      poné ingenieria@exergroup.com — ahí es donde van a llegar todas las consultas
+//   4. Formspree te da una URL del tipo https://formspree.io/f/xxxxxxxx — copiarla acá abajo
+//   5. Formspree envía un email de verificación a ingenieria@exergroup.com:
 //      hay que confirmarlo para que el formulario empiece a entregar mensajes
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/REEMPLAZAR_CON_TU_ENDPOINT';
 
