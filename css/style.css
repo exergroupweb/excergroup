@@ -179,8 +179,26 @@ a { color: inherit; text-decoration: none; }
   padding: 80px 0;
 }
 
+.hero__grid {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero__image {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 340px;
+}
+
+.hero__image img {
+  width: 100%;
+  height: auto;
+}
+
 .hero__content {
   max-width: 640px;
+  flex: 1;
 }
 
 .hero__title {
@@ -211,6 +229,11 @@ a { color: inherit; text-decoration: none; }
 .quote-section {
   background: var(--navy);
   padding: 96px 0;
+  overflow: hidden;
+}
+
+.quote-section__grid {
+  position: relative;
 }
 
 .quote-box {
@@ -226,6 +249,19 @@ a { color: inherit; text-decoration: none; }
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+}
+
+.quote-flag {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  width: 220px;
+  opacity: 0.9;
+  z-index: 0;
+  pointer-events: none;
 }
 
 /* ===== Footer ===== */
@@ -406,10 +442,27 @@ a { color: inherit; text-decoration: none; }
 
 /* ===== Contact page ===== */
 .contact-hero {
+  position: relative;
   background: linear-gradient(135deg, var(--navy) 0%, var(--blue-mid) 100%);
   color: var(--white);
   padding: 72px 0 56px;
   text-align: center;
+  overflow: hidden;
+}
+
+.contact-hero__logo {
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  transform: translateY(-50%);
+  width: 320px;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.contact-hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .contact-hero h1 {
@@ -549,10 +602,25 @@ a { color: inherit; text-decoration: none; }
 
 /* ===== Servicios page ===== */
 .services-hero {
-  background: linear-gradient(135deg, var(--navy) 0%, var(--blue-mid) 100%);
+  position: relative;
+  background-color: var(--navy);
+  background-size: cover;
+  background-position: center;
   color: var(--white);
-  padding: 72px 0 56px;
+  padding: 96px 0 72px;
   text-align: center;
+  overflow: hidden;
+}
+
+.services-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(26, 67, 140, 0.88) 0%, rgba(96, 149, 205, 0.75) 100%);
+}
+
+.services-hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .services-hero h1 {
@@ -724,6 +792,7 @@ a { color: inherit; text-decoration: none; }
   .footer__grid { grid-template-columns: repeat(2, 1fr); }
   .about-intro__grid { grid-template-columns: 1fr; }
   .about-photo { max-width: 360px; margin: 0 auto; }
+  .quote-flag { width: 140px; right: -10px; opacity: 0.6; }
 }
 
 @media (max-width: 720px) {
@@ -754,7 +823,11 @@ a { color: inherit; text-decoration: none; }
   .nav__toggle { display: block; }
 
   .hero { padding: 56px 0; text-align: left; }
+  .hero__grid { flex-direction: column; gap: 32px; }
+  .hero__image { max-width: 200px; }
   .quote-box { padding: 40px 28px; }
+  .quote-flag { display: none; }
+  .contact-hero__logo { display: none; }
   .footer__grid { grid-template-columns: 1fr; gap: 32px; }
   .contact-form { margin-top: -40px; padding: 32px 24px; }
   .container { padding: 0 20px; }
